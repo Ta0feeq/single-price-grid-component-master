@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-Yellow: hsl(71, 73%, 54%);
+  --light-Gray: hsl(204, 43%, 93%);
+  --grayish-Blue: hsl(218, 22%, 67%);
+  --karla: "Karla", sans-serif;
+  --white: white;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--light-Gray);
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--karla);
+}
+main {
+  width: 700px;
+  border-radius: 8px;
+  max-width: 90%;
+}
+.header {
+  font-family: var(--karla);
+}
+.text {
+  background-color: var(--white);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: left;
+  padding: 30px;
+}
+
+.text h1 {
+  font-family: var(--karla);
+  color: var(--cyan);
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.text h2 {
+  font-family: var(--karla);
+  color: var(--bright-Yellow);
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+.text p {
+  font-family: var(--karla);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--grayish-Blue);
+}
+
+.monthly {
+  display: flex;
+}
+.subscription {
+  width: 50%;
+  background-color: var(--cyan);
+  font-family: var(--karla);
+  /* text-align: center; */
+  padding: 45px 32px;
+  border-radius: 0 0 0 10px;
+  /* height: 250px; */
+}
+.subscription h1 {
+  font-family: var(--karla);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 24 px;
+  opacity: 0.8;
+}
+.subscription h2 {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 24px;
+  margin: 20px 0 8px;
+}
+.subscription h2 span {
+  color: var(--white);
+  opacity: 0.6;
+  font-size: 19px;
+}
+.subscription p {
+  color: var(--white);
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+.btn button {
+  padding: 13px 24px;
+  background-color: var(--bright-Yellow);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.mission {
+  width: 50%;
+  background-color: var(--cyan);
+  opacity: 0.7;
+  font-family: var(--karla);
+  /* text-align: center; */
+  padding: 45px 32px;
+  border-bottom-right-radius: 10px;
+  /* text-align: left; */
+}
+.mission h1 {
+  font-family: var(--karla);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 24 px;
+  opacity: 0.8;
+}
+.mission ul {
+  list-style-type: none;
+  margin-top: 12px;
+  display: grid;
+  gap: 6px;
+  color: var(--white);
+  opacity: 0.8;
+  font-size: 16px;
+  /* line-height: 1.8; */
+  /* width: 75%; */
+}
+.mission ul li {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .header p {
+    font-size: 14px;
+  }
+  .monthly {
+    flex-direction: column;
+  }
+  .text,
+  .subscription,
+  .mission {
+    width: 100%;
+    padding: 28px;
+  }
+  .subscription {
+    border-radius: 0;
+  }
+  .subscription h1 {
+    font-size: 16px;
+  }
+  .mission {
+    border-radius: 0 0 8px 8px;
+  }
+  .mission ul {
+    font-size: 14px;
+  }
+  .btn button {
+    width: 100%;
+  }
+}
